@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Message Page</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>Send a Message</h1>
+  <form method="post">
+    <input type="text" name="username" placeholder="Your Name" required><br>
+    <textarea name="message" placeholder="Your Message" required></textarea><br>
+    <button type="submit">Send</button>
+  </form>
+  <p><a href="{{ url_for('index') }}">Back to Home</a></p>
+</body>
+</html>
