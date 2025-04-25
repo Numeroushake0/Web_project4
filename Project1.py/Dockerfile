@@ -7,4 +7,4 @@ RUN pip install flask
 
 EXPOSE 3000
 
-CMD ["python", "main.py"]
+CMD ["python", "Project1.py"]
