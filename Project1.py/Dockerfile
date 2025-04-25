@@ -1,10 +1,12 @@
 FROM python:3.11-slim
 
 WORKDIR /app
+
 COPY . /app
 
-RUN pip install flask
+RUN pip install --no-cache-dir flask
 
 EXPOSE 3000
 
-CMD ["python", "Project1.py"]
+CMD ["python", "main.py"]
+
